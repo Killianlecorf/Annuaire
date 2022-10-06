@@ -5,5 +5,5 @@ include('../Annuaire/config/ConnectDB.php');
 $mysqlconnection = new Database ;
 $mysqlconnection -> BDD() ;
 
-include('../Annuaire/templates/indexVue.php');
+include('../Annuaire/templates/Header.php');
 
