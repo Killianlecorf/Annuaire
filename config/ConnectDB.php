@@ -9,16 +9,18 @@ class Database
 
     public function decodeJson()
     {
-        $this->username = json_decode(file_get_contents('config\BDD.json'), true )["USERNAME"];
-        $this->host = json_decode(file_get_contents('config\BDD.json'), true)["HOST"];
-        $this->dbname = json_decode(file_get_contents('config\BDD.json'), true)["DBNAME"];
-        $this->pwd = json_decode(file_get_contents('config\BDD.json'), true)["PWD"];
+        $json = json_decode(file_get_contents(__DIR__ . '/BDD.json'), true) ;
+        $this->host = $json["HOST"];
+        $this->dbname = $json["DBNAME"];
+        $this->username = $json["USERNAME"];
+        $this->pwd = $json["PWD"];
     }
 
     public function BDD()
     {
         try{
-            $mysqlconnection = new PDO('mysql:host=' . $this->host . ';dbname=' . $this->dbname , "root" , $this->pwd);
+            $this->decodeJson();
+            $mysqlconnection = new PDO('mysql:host=' . $this->host . ';dbname=' . $this->dbname , $this->username , $this->pwd);
             echo "connexion";
             return $mysqlconnection ;
         } catch (Exception $e) {
