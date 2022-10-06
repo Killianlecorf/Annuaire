@@ -1,6 +1,6 @@
 <?php
 
-include('../AnnuaireNWS/config/ConnectDB.php');
+include('../Annuaire/config/ConnectDB.php');
 
 $mysqlconnection = new Database ;
 $mysqlconnection -> BDD() ;
