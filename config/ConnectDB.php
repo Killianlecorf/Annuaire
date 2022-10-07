@@ -7,25 +7,23 @@ class Database
     private $username;
     private  $pwd;
 
-    public function decodeJson()
+    public static function decodeJson()
     {
         $json = json_decode(file_get_contents(__DIR__ . '/BDD.json'), true) ;
-        $this->host = $json["HOST"];
-        $this->dbname = $json["DBNAME"];
-        $this->username = $json["USERNAME"];
-        $this->pwd = $json["PWD"];
+        return $json ;
     }
 
-    public function BDD()
+    public static function BDD()
     {
         try{
-            $this->decodeJson();
-            $mysqlconnection = new PDO('mysql:host=' . $this->host . ';dbname=' . $this->dbname , $this->username , $this->pwd);
+            $json = Database::decodeJson();
+            $mysqlconnection = new PDO('mysql:host=' . $json["HOST"] . ';dbname=' . $json["DBNAME"] , $json["USERNAME"] , $json["PWD"]);
             echo "connexion";
             return $mysqlconnection ;
         } catch (Exception $e) {
             die('Erreur :' .$e->getMessage());
         }
     }
+    
 
 }

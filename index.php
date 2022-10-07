@@ -2,8 +2,7 @@
 
 include('../Annuaire/config/ConnectDB.php');
 
-$mysqlconnection = new Database ;
-$mysqlconnection -> BDD() ;
+$mysqlconnection = Database::BDD() ;
 
 include('../Annuaire/templates/Header.php');
 
