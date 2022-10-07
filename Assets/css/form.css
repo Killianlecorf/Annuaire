@@ -59,3 +59,7 @@ input{
     align-items: center ; 
     justify-content: center;    
 }
+
+.submit-button{
+    margin-top: 20px;
+}

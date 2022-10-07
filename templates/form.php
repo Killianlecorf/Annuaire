@@ -22,7 +22,7 @@
             <input type="text" required>
             <label for="">Spécialité</label>
             <input type="text" required>
-            <input type="submit">
+            <input id="submit-button" type="submit">
         </form>
     </div>
 </section>
