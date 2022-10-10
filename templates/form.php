@@ -1,7 +1,7 @@
 <section class="form-part">
     <div class="form-content">
         <h1>Ajouter</h1>
-        <form id="form-add" action="">
+        <form id="form-add" action="POST">
             <label for="">Nom</label>
             <input name="user_name" type="text" required>
             <label for="">prenom</label>
