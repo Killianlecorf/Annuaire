@@ -16,11 +16,17 @@ input{
     border: 2px solid var(--color-black);
     padding-left: 10px;
     width: 125%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+}
+
+label{
+    margin-top: 10px;
 }
 
 .form-part{
     width: 100vw ; 
-    height: 50vh;
+    height: auto;
     display: flex ;
     justify-content: center;
     align-items: center ;
@@ -35,7 +41,7 @@ input{
     align-items: center;
     justify-content: center;
     border: 2px solid black;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 5px 5px 15px black;
     border-radius: 20px;
 }
 
@@ -60,6 +66,13 @@ input{
     justify-content: center;    
 }
 
-.submit-button{
-    margin-top: 20px;
+#submit-button{
+    margin: 25px 25px 25px 25px;
+    background-color: var(--color-white);
+}
+
+#submit-button:hover{
+    margin: 25px 25px 25px 25px;
+    background-color: var(--color-black);
+    color:var(--color-white);
 }
