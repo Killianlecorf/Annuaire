@@ -18,7 +18,6 @@ class Database
         try{
             $json = Database::decodeJson();
             $mysqlconnection = new PDO('mysql:host=' . $json["HOST"] . ';dbname=' . $json["DBNAME"] , $json["USERNAME"] , $json["PWD"]);
-            echo "connexion";
             return $mysqlconnection ;
         } catch (Exception $e) {
             die('Erreur :' .$e->getMessage());
