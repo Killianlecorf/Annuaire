@@ -5,13 +5,11 @@ require_once __DIR__ . '/../controller/controller.php';
 
 class  MessageManager{
 
-    public static function insert($name) {
+    public static function insert($name ,$lname,$email,$number,$spe) {
 
         $mysqlconnection = database::BDD();
-        $numero = 35952;
-        $request = "INSERT INTO `user`(`user_name`,`user_lname`,`user_mail`,`user_numero`,`user_spe`) VALUE ('$name' , '$name','$name' ,'$numero' , '$name');";
+        $request = "INSERT INTO `user`(`user_name`,`user_lname`,`user_mail`,`user_numero`,`user_spe`) VALUE ('$name' , '$lname','$email' ,'$number' , '$spe');";
         $mysqlconnection->exec($request);
-
-        header("Location: ../models/MessageManager.php");
+        header("Location: ../index.php");
     }
 }
