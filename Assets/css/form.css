@@ -17,7 +17,8 @@ input{
     padding: 10px 10px 10px 10px;
     width: 125%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-top: 10px;
+    margin-top: 10px
+    
 }
 
 label{
@@ -26,6 +27,7 @@ label{
 
 .close-popup-form{
     width: 100%;
+    height: auto;
     display: flex;
     justify-content: flex-end;
 }
@@ -53,6 +55,7 @@ label{
     display: none;
     border-radius: 20px;
 }
+
 
 #fond-form{
     position: fixed;
@@ -98,12 +101,12 @@ label{
 }
 
 #submit-button{
-    margin: 25px 25px 25px 25px;
+    margin: 25px 25px 50px 25px;
     background-color: var(--color-white);
 }
 
 #submit-button:hover{
-    margin: 25px 25px 25px 25px;
+    margin: 25px 25px 50px 25px;
     background-color: var(--color-black);
     color:var(--color-white);
 }

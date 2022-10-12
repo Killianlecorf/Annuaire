@@ -1,0 +1,38 @@
+th{
+    color: #000;
+    border: 2px solid black;
+    width: 20%;
+    
+}
+
+.sectionTable{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.table-content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    width: 75vw ; 
+    border-spacing: unset ;
+
+}
+
+table,
+td {
+    color: #000;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+thead,
+tfoot {
+    color: #fff;
+    border: 1px solid black;
+}

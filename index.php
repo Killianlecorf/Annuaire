@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../Annuaire/Assets/css/form.css">
+    <link rel="stylesheet" href="../Annuaire/Assets/css/readTable.css">
     <script src="https://kit.fontawesome.com/e1106f8104.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -14,8 +15,16 @@
         include('../Annuaire/config/ConnectDB.php');
 
         include('../Annuaire/templates/form.php');
+
     ?>
     <button onclick="displayBlockForm()">ouvrir</button>
+
+    <section class="sectionTable">
+            <?php
+                include('../Annuaire/templates/readTable.php')
+            ?>
+    </section>
+
 
     <script src="../Annuaire/Assets/js/script.js"></script>
 </body>
