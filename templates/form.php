@@ -1,5 +1,9 @@
-<section class="form-part">
+<div onclick="displayNoneForm()" id="fond-form"></div>
+<section id="form" class="form-part">
     <div class="form-content">
+        <div class="close-popup-form">
+            <button class="close-popup" onclick="displayNoneForm()"><i id="close-form-croix" class="fa-solid fa-xmark"></i></button>
+        </div>
         <h1>Ajouter</h1>
         <form id="form-add" action="/annuaire/controller/controller.php" method="POST">
             <label for="">Nom</label>
@@ -16,3 +20,4 @@
         </form>
     </div>
 </section>
+<script src="../Annuaire/Assets/js/script.js"></script>
