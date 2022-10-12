@@ -12,4 +12,6 @@ class  MessageManager{
         $mysqlconnection->exec($request);
         header("Location: ../index.php");
     }
+
+    
 }
