@@ -9,7 +9,7 @@
             <label for="">E-mail</label>
             <input name="user_email" type="text" placeholder="Email" required>
             <label for="">Numéro</label>
-            <input name="user_number" type="text" placeholder="Numéro" required>
+            <input name="user_number" type="number" placeholder="Numéro" required>
             <label for="">Spécialité</label>
             <input name="user_spe" type="text" placeholder="Spécialité" required>
             <input id="submit-button" type="submit">
