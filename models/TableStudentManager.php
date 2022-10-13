@@ -10,11 +10,11 @@ class TableStudentManager{
         $selectmysql =  $mysqlconnection->query($sql);
         while($row = $selectmysql->fetch(PDO::FETCH_ASSOC)) : ?>
             <tr>
-                <td><?php echo htmlspecialchars($row['user_name']); ?></td>
-                <td><?php echo htmlspecialchars($row['user_lname']); ?></td>
-                <td><?php echo htmlspecialchars($row['user_mail']); ?></td>
-                <td><?php echo htmlspecialchars($row['user_numero']); ?></td>
-                <td><?php echo htmlspecialchars($row['user_spe']); ?></td>
+                <td><p><?php echo htmlspecialchars($row['user_name']); ?></p></td>
+                <td><p><?php echo htmlspecialchars($row['user_lname']); ?></p></td>
+                <td><p><?php echo htmlspecialchars($row['user_mail']); ?></p></td>
+                <td><p><?php echo htmlspecialchars($row['user_numero']); ?></p></td>
+                <td><p><?php echo htmlspecialchars($row['user_spe']); ?></p></td>
             </tr>
         <?php endwhile; 
     }

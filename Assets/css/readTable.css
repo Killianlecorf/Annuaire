@@ -2,7 +2,7 @@ th{
     color: #000;
     border: 2px solid black;
     width: 20%;
-    
+
 }
 
 .sectionTable{
@@ -24,12 +24,18 @@ table{
 
 }
 
-table,
+
 td {
     color: #000;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 50px;
     overflow: hidden;
 }
+
+td p {
+    text-align: center;
+}
+
 
 thead,
 tfoot {
