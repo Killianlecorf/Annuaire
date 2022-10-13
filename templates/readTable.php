@@ -12,28 +12,12 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>name</td>
-                    <td>lname</td>
-                    <td>email</td>
-                    <td>numéro</td>
-                    <td>The table body</td>
-                </tr>
-                <!-- <?php 
-                    foreach ($students as $student) {
-                ?>  -->
 
-                    <tr>
-                        <td>name</td>
-                        <td>lname</td>
-                        <td>email</td>
-                        <td>numéro</td>
-                        <td>The table body</td>
-                    </tr>
-                    
-                <!-- <?php 
-                    }
-                        ?> -->
+                <?php
+                    include('../Annuaire/models/TableStudentManager.php');
+                    TableStudentManager::ViewTable();
+                ?>
+
             </tbody>
         </table>
 
