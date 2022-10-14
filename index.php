@@ -10,6 +10,7 @@
     <script src="https://kit.fontawesome.com/e1106f8104.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <?php
         include('../Annuaire/config/ConnectDB.php');
 
