@@ -7,17 +7,19 @@
     <title>Document</title>
     <link rel="stylesheet" href="../Annuaire/Assets/css/form.css">
     <link rel="stylesheet" href="../Annuaire/Assets/css/readTable.css">
+    <link rel="stylesheet" href="../Annuaire/Assets/css/header.css">
     <script src="https://kit.fontawesome.com/e1106f8104.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
     <?php
-        include('../Annuaire/config/ConnectDB.php');
-
         include('../Annuaire/templates/form.php');
 
+        include('../Annuaire/templates/header.php');
+
+        include('../Annuaire/config/ConnectDB.php');
+
     ?>
-    <button onclick="displayBlockForm()">ouvrir</button>
 
     <section class="sectionTable">
             <?php
