@@ -16,8 +16,7 @@
 
     include('../Annuaire/templates/Header.php');
 
-    include('../Annuaire/templates/form.php')
-    ?>
+    <script src="../Annuaire/Assets/js/script.js"></script>
 </body>
 </html>
 

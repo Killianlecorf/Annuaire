@@ -8,6 +8,7 @@
                     <th colspan="1">email</th>
                     <th colspan="1">numéro</th>
                     <th colspan="1">spécialté</th>
+                    <th colspan="2 ">supprimer</th>
 
                 </tr>
             </thead>

@@ -5,7 +5,7 @@
             <button class="close-popup" onclick="displayNoneForm()"><i id="close-form-croix" class="fa-solid fa-xmark"></i></button>
         </div>
         <h1>Ajouter</h1>
-        <form id="form-add" action="/annuaire/controller/controller.php" method="POST">
+        <form id="form-add" action="/annuaire/controller/usercontroller.php" method="POST">
             <label for="">Nom</label>
             <input name="user_name" type="text" placeholder="Nom" required>
             <label for="">prenom</label>
@@ -13,7 +13,7 @@
             <label for="">E-mail</label>
             <input name="user_email" type="text" placeholder="Email" required>
             <label for="">Numéro</label>
-            <input name="user_number" type="number" placeholder="Numéro" required>
+            <input name="user_number" type="number" placeholder="Numéro" minlength="10" required>
             <label for="">Spécialité</label>
             <input name="user_spe" type="text" placeholder="Spécialité" required>
             <input id="submit-button" type="submit">
