@@ -12,6 +12,11 @@ th{
 }
 
 
+table, th, td {
+    table-layout:fixed;
+    overflow: hidden;
+  }
+
 .table-content{
     width: 100%;
     display: flex;
@@ -28,7 +33,10 @@ table{
 td {
     color: #000;
     border-bottom: 1px solid black;
+    width: 20%;
     height: 50px;
+    overflow: hidden;
+    white-space:nowrap
 }
 
 td p {
