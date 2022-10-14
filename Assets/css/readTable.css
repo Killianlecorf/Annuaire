@@ -29,7 +29,6 @@ td {
     color: #000;
     border-bottom: 1px solid black;
     height: 50px;
-    overflow: hidden;
 }
 
 td p {
@@ -41,4 +40,21 @@ thead,
 tfoot {
     color: #fff;
     border: 1px solid black;
+}
+
+#FA-delete{
+    color: black;
+}
+
+#FA-delete:hover{
+    color: red;
+}
+
+#FA-edit{
+    color: black;
+}
+
+
+#FA-edit:hover{
+    color: blue;
 }

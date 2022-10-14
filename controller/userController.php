@@ -20,10 +20,7 @@ class UserController{
             $number=$_POST['user_number'];
             $spe=$_POST['user_spe'];
 
-
-
             MessageManager::insert($name,$lname,$email,$number,$spe);
-            echo 'message envoyer';
 
         }
     }
