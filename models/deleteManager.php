@@ -7,9 +7,8 @@ class DeleteManager{
     public static function DeleteCommande()
     {
         $mysqlconnection = database::BDD();
-        $sql= 'SELECT `user_ID` FROM `user`;';
-        $id = $mysqlconnection->query($sql);
-        $deleterequest = 'DELETE FROM `user` WHERE' . $id . ';' ;
-        $delete
+        $deleteRequest = 'DELETE FROM `user` WHERE `user_ID` = ' . $_GET['id'] . ';' ;
+        $mysqlconnection->exec($deleteRequest);
+        header("Location: ../index.php");
     }
 }
