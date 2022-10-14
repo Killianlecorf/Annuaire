@@ -6,7 +6,7 @@ class TableStudentManager{
 
     public static function ViewTable() {
         $mysqlconnection = database::BDD();
-        $sql = "SELECT * FROM `user`";
+        $sql = "SELECT * FROM `user` ORDER BY `user_ID` DESC;";
         $selectmysql =  $mysqlconnection->query($sql);
         while($row = $selectmysql->fetch(PDO::FETCH_ASSOC)) : ?>
             <tr>

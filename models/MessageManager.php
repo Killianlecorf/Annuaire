@@ -1,7 +1,7 @@
 <?php
 
 require_once __DIR__ . '/../config/ConnectDB.php';
-require_once __DIR__ . '/../controller/controller.php';
+require_once __DIR__ . '/../controller/userController.php';
 
 class  MessageManager{
 
