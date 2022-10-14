@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +23,6 @@
                 include('../Annuaire/templates/readTable.php')
             ?>
     </section>
-
 
     <script src="../Annuaire/Assets/js/script.js"></script>
 </body>
