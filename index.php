@@ -13,17 +13,21 @@
 <body>
 
     <?php
+
         include('../Annuaire/templates/form.php');
+
+        include('../Annuaire/templates/UpdateForm.php');
 
         include('../Annuaire/templates/header.php');
 
         include('../Annuaire/config/ConnectDB.php');
 
+        
     ?>
 
     <section class="sectionTable">
             <?php
-                include('../Annuaire/templates/readTable.php')
+                include('../Annuaire/templates/readTable.php');
             ?>
     </section>
 
