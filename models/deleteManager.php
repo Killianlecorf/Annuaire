@@ -12,3 +12,4 @@ class DeleteManager{
         header("Location: ../index.php");
     }
 }
+

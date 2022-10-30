@@ -15,9 +15,10 @@
 
         </div>
         <div class="search-content">
-            <form action="" method="GET">
-                <input class="search-header" type="search" name="q" placeholder="Rechercher un étudiant">
-                <input class="submit-header" type="submit" value="Rechercher">
+                <h2>Rechercher par le prenom</h2>
+            <form action="index.php" method="get">
+                <input class="search-header" type="search" name="q" placeholder="Rechercher un étudiant" value="<?= htmlentities($_GET['q'] ?? null) ?>">
+                <button class="submit-header">Rechercher</button> 
             </form>
         </div>
     </section>
