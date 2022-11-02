@@ -6,21 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../Annuaire/Assets/css/form.css">
+    <link rel="stylesheet" href="../Annuaire/Assets/css/formUpdate.css">
     <link rel="stylesheet" href="../Annuaire/Assets/css/readTable.css">
+    <link rel="stylesheet" href="../Annuaire/Assets/css/header.css">
     <script src="https://kit.fontawesome.com/e1106f8104.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <?php
-        include('../Annuaire/config/ConnectDB.php');
 
         include('../Annuaire/templates/form.php');
 
+        include('../Annuaire/templates/UpdateForm.php');
+
+        include('../Annuaire/templates/header.php');
+
+        include('../Annuaire/config/ConnectDB.php');
+
+        
     ?>
-    <button onclick="displayBlockForm()">ouvrir</button>
 
     <section class="sectionTable">
             <?php
-                include('../Annuaire/templates/readTable.php')
+                include('../Annuaire/templates/readTable.php');
             ?>
     </section>
 

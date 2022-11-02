@@ -57,7 +57,7 @@ label{
 }
 
 
-#fond-form{
+#fond-formUpdate{
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -101,7 +101,7 @@ label{
     color:var(--color-white);
 }
 
-#select-add{
+#select-update{
     margin-top: 15px;
     width: 133%;
     height: 33px;

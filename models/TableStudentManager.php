@@ -1,30 +1,42 @@
 <?php
 
 require_once __DIR__ . '/../config/ConnectDB.php';
+include __DIR__ . '/../models/filterManager.php';
+
+
 
 class TableStudentManager{
 
     public static function ViewTable() {
-        $mysqlconnection = database::BDD();
-        $sql = "SELECT * FROM `user` ORDER BY `user_ID` DESC;";
-        $selectmysql =  $mysqlconnection->query($sql);
-        while($row = $selectmysql->fetch(PDO::FETCH_ASSOC)) : ?>
-            <tr>
-                <td><p><?php echo htmlspecialchars($row['user_name']); ?></p></td>
-                <td><p><?php echo htmlspecialchars($row['user_lname']); ?></p></td>
-                <td><p><?php echo htmlspecialchars($row['user_mail']); ?></p></td>
-                <td><p><?php echo htmlspecialchars($row['user_numero']); ?></p></td>
-                <td><p><?php echo htmlspecialchars($row['user_spe']); ?></p></td>
+        $selectmysql = filterManager::searchoption();
+        foreach($selectmysql as $row) {
+            $user_id = $row['user_ID'];
+            $user_name = htmlspecialchars($row['user_name']);
+            $user_lname = htmlspecialchars($row['user_lname']);
+            $user_mail = htmlspecialchars($row['user_mail']);
+            $user_numero = htmlspecialchars($row['user_numero']);
+            $user_spe = htmlspecialchars($row['user_spe']);
+            $deletePath ="controller/deletecontroller.php?id=" . $row['user_ID'] . "&methode=delete";
+            
+
+
+            echo "<tr>
+                <td><p> $user_name </p></td>
+                <td><p> $user_lname </p></td>
+                <td><p> $user_mail </p></td>
+                <td><p>$user_numero </p></td>
+                <td><p>$user_spe </p></td>
                 <td><p>
-                    <a href= <?php echo "controller/deletecontroller.php?id=" . $row['user_ID'] . "&methode=delete"?> >
-                        <i id="FA-delete" class="fa-solid fa-trash"></i>
+                    <a href= $deletePath >
+                        <i id='FA-delete' class='fa-solid fa-trash'></i>
                     </a>
                     
                 </p></td>
-                <td><p><i id="FA-edit" class="fa-solid fa-pen-to-square"></i></p></td>
-            </tr>
-        <?php endwhile; 
+                <td><p>
+                        <i id='FA-edit' onclick='displayBlockFormUpdate($user_id)' class='fa-solid fa-pen-to-square'></i>
+                </p></td>
+            </tr>";
+        } 
     }
-
 
 }

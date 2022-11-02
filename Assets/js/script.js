@@ -8,16 +8,19 @@ function displayNoneForm() {
     document.getElementById("fond-form").style.display = "none" ;
 }
 
-// $('#submit-button').on('click', function() {
-//     if ($('#form-add').checkValidity() == false) {
-//         $('#prompt').removeClass().addClass('error').html('your error message');
-//     }
-// });
+function displayBlockFormUpdate(user_id){
+    console.log('2')
+    const form = document.getElementById("formUpdate");
+    const input = document.getElementById("user_ID_input");
+    input.value = user_id ; 
+    console.log(input);
 
-// $('#submit-button').on('click', function() {
-//     if ($('#form-add').checkValidity() == false) {
-//        //show errors in the error DIV
-//        $("#errors").empty();
-//        $("#errors").text("error message");
-//     }
-//    });
+    form.style.display = "block";
+    document.getElementById("fond-formUpdate").style.display = "block" ;
+}
+
+function displayNoneFormUpdate() {
+    document.getElementById("formUpdate").style.display = "none" ;
+    document.getElementById("fond-formUpdate").style.display = "none" ;
+}
+

@@ -15,7 +15,14 @@
             <label for="">Numéro</label>
             <input name="user_number" type="number" placeholder="Numéro" minlength="10" required>
             <label for="">Spécialité</label>
-            <input name="user_spe" type="text" placeholder="Spécialité" required>
+            <!-- <input name="user_spe" type="text" placeholder="Spécialité" required> -->
+            <select name="user_spe" id="select-add">
+            <option value="0">--Choisir une spécialité--</option>
+                <option>développement</option>
+                <option>E-Marketing</option>
+                <option>Communication graphique</option>
+                <option>Communicaty manager</option>
+            </select>
             <input id="submit-button" type="submit">
         </form>
     </div>
