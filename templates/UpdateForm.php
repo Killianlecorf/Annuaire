@@ -15,15 +15,18 @@
             <label for="">Numéro</label>
             <input name="update_user_number" type="number" placeholder="Numéro" minlength="10" required>
             <label for="">Spécialité</label>
-            <input name="update_user_spe" type="text" placeholder="Spécialité" required>
+            <!-- <input name="update_user_spe" type="text" placeholder="Spécialité" required> -->
+            <select name="update_user_spe" id="select-update">
+            <option value="0">--Choisir une spécialité--</option>
+                <option>développement</option>
+                <option>E-Marketing</option>
+                <option>Communication graphique</option>
+                <option>Communicaty manager</option>
+            </select>
             <input name="update_user_ID" type="hidden" id="user_ID_input" value="4">
             <input id="submit-button" type="submit">
         </form>
     </div>
 </section>
 <script src="../Annuaire/Assets/js/script.js"></script>
-<script>console.log('2')
-    const form = document.getElementById("formUpdate");
-    const input = document.getElementById("user_ID_input");
-    input.value = user_id ; 
-    console.log(input);</script>
+

@@ -100,3 +100,11 @@ label{
     background-color: var(--color-black);
     color:var(--color-white);
 }
+
+#select-add{
+    margin-top: 15px;
+    width: 133%;
+    height: 33px;
+    border-radius: 20px ;
+    border: 2px solid black ;
+}

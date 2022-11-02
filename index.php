@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../Annuaire/Assets/css/form.css">
+    <link rel="stylesheet" href="../Annuaire/Assets/css/formUpdate.css">
     <link rel="stylesheet" href="../Annuaire/Assets/css/readTable.css">
     <link rel="stylesheet" href="../Annuaire/Assets/css/header.css">
     <script src="https://kit.fontawesome.com/e1106f8104.js" crossorigin="anonymous"></script>
