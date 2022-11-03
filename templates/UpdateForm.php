@@ -15,13 +15,12 @@
             <label for="">Numéro</label>
             <input name="update_user_number" type="number" placeholder="Numéro" minlength="10" required>
             <label for="">Spécialité</label>
-            <!-- <input name="update_user_spe" type="text" placeholder="Spécialité" required> -->
             <select name="update_user_spe" id="select-update">
             <option value="0">--Choisir une spécialité--</option>
-                <option>développement</option>
+                <option>developpement</option>
                 <option>E-Marketing</option>
                 <option>Communication graphique</option>
-                <option>Communicaty manager</option>
+                <option>Community manager</option>
             </select>
             <input name="update_user_ID" type="hidden" id="user_ID_input" value="4">
             <input id="submit-button" type="submit">

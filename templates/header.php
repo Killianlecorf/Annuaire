@@ -7,7 +7,6 @@
         </div>
         <div class="nav-content">
             <button onclick="displayBlockForm()" id="button-insert">Ajouter</button>
-            <button onclick="displayBlockForm()" id="button-insert2">Ajouter</button>
         </div>
     </section>
     <section class="filter-part">
@@ -21,8 +20,29 @@
                 <button class="submit-header">Rechercher</button> 
             </form>
         </div>
-        <!-- <div class="button-content-filter">
-            <button>trier par lettre</button>
-        </div> -->
+        <div class="button-content-filter">
+            <div class="button-filter">
+                <form action="index.php" method="POST">
+                    <input type="hidden" name="dev" value="dev">
+                    <button type="submit" id="filterDev" >Trier par développeur</button>
+                </form>
+                <form action="index.php" method="POST">
+                    <input type="hidden" name="com" value="com">
+                    <button type="submit" id="filterCom">Trier par community manager</button>
+                </form>
+                <form action="index.php" method="POST">
+                    <input type="hidden" name="cg" value="cg">
+                    <button type="submit" id="filterCg">Trier par com-graph</button>
+                </form>
+                <form action="index.php" method="POST">
+                    <input type="hidden" name="mark" value="mark">
+                    <button type="submit" id="filterMark">Trier par marketing</button>
+                </form>
+                <form action="index.php" method="POST">
+                    <input type="hidden" name="reset" value="reset">
+                    <button type="submit" id="filterReset">Reset les filtres</button>
+                </form>
+            </div>
+        </div>
     </section>
 </header>

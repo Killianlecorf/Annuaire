@@ -11,6 +11,8 @@ class testUnit
 
         if ($this->numero == 0 ) {
             echo 'le numero nest pas bon';
+        }else {
+            echo 'c\'est bon';
         }
     }
 }

@@ -16,7 +16,17 @@
 
                 <?php
                     include('../Annuaire/models/TableStudentManager.php');
-                    TableStudentManager::ViewTable();
+                    if (isset($_POST['dev'])) {
+                        TableStudentManager::ViewTableDev();
+                    }elseif (isset($_POST['cg'])) {
+                        TableStudentManager::ViewTableCg();
+                    }elseif (isset($_POST['com'])) {
+                        TableStudentManager::ViewTableCM();
+                    }elseif (isset($_POST['mark'])) {
+                        TableStudentManager::ViewTableMark();
+                    }else {
+                        TableStudentManager::ViewTable();
+                    }
                 ?>
 
             </tbody>

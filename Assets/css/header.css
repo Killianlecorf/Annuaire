@@ -115,3 +115,40 @@
     color: white;
     cursor: pointer;
 }
+
+.button-content-filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15vh;
+    
+}
+
+.button-filter{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#filterDev , #filterCom , #filterCg , #filterMark , #filterReset{
+    width: 100%;
+    height: 5vh;
+    border-radius: 20px;
+    border: 2px solid black ;
+    cursor: pointer;
+    background-color: #E94A34;
+    color: white;
+    padding: 0px 15px 0px 15px;
+    
+}
+
+#filterDev:hover , #filterCom:hover , #filterCg:hover , #filterMark:hover , #filterReset:hover{
+    width: 100%;
+    height: 5vh;
+    border-radius: 20px;
+    border: 2px solid black ;
+    cursor: pointer;
+    background-color: #01A5A6;
+    color: white;
+}
